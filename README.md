@@ -10,7 +10,7 @@ https://ftp.cdc.gov/pub/HEALTH_STATISTICS/NCHS/datalinkage/linked_mortality/Stat
 Refer to the followup.do to see edits.
 
 2. Link the do file in step 1
-global repo "https://github.com/WenjieCai825/project/blob/main/"
+global repo "https://github.com/kiyoiiiii/project/blob/main/"
 do ${repo}followup.do
 save followup, replace
 
