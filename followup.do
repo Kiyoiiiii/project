@@ -11,3 +11,5 @@ save followup, replace
 import sasxport5 "https://wwwn.cdc.gov/Nchs/Nhanes/1999-2000/DEMO.XPT", clear
 merge 1:1 seqn using followup
 lookfor follow
+
+/Users/kiyoi/Desktop/stata/stata\ II/Assignment\ 5/Stata\ ReadInProgramALISurvevs.do
