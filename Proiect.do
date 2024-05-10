@@ -1,4 +1,4 @@
-https://github.com/Kiyoiiiii/project/blob/38921b7b2d066db7fa1885f888b0504d4b3995fd/followup.do
+https://github.com/Kiyoiiiii/project/blob/02f933428207b45656890de5632bd1a4137c42a1/followup.do
 
 import sasxport5 "https://wwwn.cdc.gov/Nchs/Nhanes/1999-2000/DEMO.XPT", clear
  //data
