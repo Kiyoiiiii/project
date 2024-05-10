@@ -37,9 +37,6 @@ Documentation for HUQ dataset: https://wwwn.cdc.gov/Nchs/Nhanes/1999-2000/HUQ.ht
 <<dd_version: 2>>     
 <<dd_include: header.txt>>
 
-
-# **Collaborative Project**
-
 $\small For$  $\small ongoing$  $\small sharing$  $\small project$
 
 1. **Project Objective**
