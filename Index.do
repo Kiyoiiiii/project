@@ -1,6 +1,11 @@
 # project
 Hw6-Sijin Du
 Project
+<<dd_version: 2>>     
+<<dd_include: header.txt>>
+
+# **Hw6-Sijin Du**
+$\project$  $\Objective$  $\Phase Plan$  
 
 1. Download and edit the Stata_ReadInProgramALlSurveys.do provided by NHANES. Upload the edited do file to the github. This do file imports and prepare the mortality data which further analysis would be based on.
 https://ftp.cdc.gov/pub/HEALTH_STATISTICS/NCHS/datalinkage/linked_mortality/Stata_ReadInProgramAllSurveys.do   
@@ -30,22 +35,11 @@ sts graph, by(huq010) fail
 stcox i.huq010
 Documentation for HUQ dataset: https://wwwn.cdc.gov/Nchs/Nhanes/1999-2000/HUQ.htm
 
-
-<<dd_version: 2>>     
-<<dd_include: header.txt>>
-
-
-
-
-# **Collaborative Project**
-
-$\small For$  $\small ongoing$  $\small sharing$  $\small project$
-
 1. **Project Objective**
 
 - Collaborate with investigators to ask critical questions in public health field
 
-2. **Phase 1 Plan**
+2. **Phase Plan**
 
 - Data source:
 
