@@ -1,0 +1,35 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="stmarkdown.css">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+</head>
+<h1><a href="#collaborative-project" id="collaborative-project"><strong>Collaborative Project</strong></a></h1>
+<p>$\small For$  $\small ongoing$  $\small sharing$  $\small project$</p>
+<ol>
+<li><strong>Project Objective</strong></li>
+</ol>
+<ul>
+<li>Collaborate with investigators to ask critical questions in public health field</li>
+</ul>
+<ol>
+<li><strong>Phase 1 Plan</strong></li>
+</ol>
+<ul>
+<li>Data source:
+<p>National Health and Nutrition Examination Survey (NHANES) <a href="https://wwwn.cdc.gov/Nchs/Nhanes/1999-2000/DEMO.XPT">1999-2000 Survey Data</a></p>
+<p>NHANES Mortality <a href="https://ftp.cdc.gov/pub/HEALTH_STATISTICS/NCHS/datalinkage/linked_mortality/NHANES_1999_2000_MORT_2019_PUBLIC.dat">Follow-up Data</a></p>
+</li>
+<li>Code development: Download original Script from <a href="https://ftp.cdc.gov/pub/HEALTH_STATISTICS/NCHS/datalinkage/linked_mortality/Stata_ReadInProgramAllSurveys.do">here</a>. Modify the .do file and upload. Execute the following Stata code to merge the survey data with the mortality data, ensuring alignment on the unique sequence numbers:</li>
+</ul>
+<pre><code class="language-stata">//use your own username/project repo instead of the class repo below
+global repo &quot;https://github.com/jhustata/intermediate/raw/main/&quot;
+do ${repo}followup.do
+save followup, replace
+import sasxport5 &quot;https://wwwn.cdc.gov/Nchs/Nhanes/1999-2000/DEMO.XPT&quot;, clear
+merge 1:1 seqn using followup
+lookfor follow
+</code></pre>
