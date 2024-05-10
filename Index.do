@@ -71,4 +71,4 @@ import sasxport5 "https://wwwn.cdc.gov/Nchs/Nhanes/1999-2000/HUQ.XPT", clear
 merge 1:1 seqn using demo_mortality, nogen
 sts graph, by(huq010) fail
 stcox i.huq010
-Documentation for HUQ dataset: https://wwwn.cdc.gov/Nchs/Nhanes/1999-2000/HUQ.htm
+Documentation for HUQ dataset: https://wwwn.cdc.gov/Nchs/Nhanes/1999-2000/HUQ.html
