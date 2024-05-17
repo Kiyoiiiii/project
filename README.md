@@ -34,8 +34,7 @@ Documentation for HUQ dataset: https://wwwn.cdc.gov/Nchs/Nhanes/1999-2000/HUQ.ht
 <<dd_version: 2>>     
 <<dd_include: header.txt>>
 
-
-# **Collaborative Project**
+#Collaborative Project
 
 1. Project Objective
 
@@ -69,11 +68,12 @@ stcox i.huq010
 Documentation for HUQ dataset: https://wwwn.cdc.gov/Nchs/Nhanes/1999-2000/HUQ.html
 
 
+# **Hw7 Analyses**
 
-#Hw7 Analyses
+#7.1 Parameters
 
-7.1 Parameters
 Non-parametric
+
 ```stata
 cls 
 //1. data
@@ -129,7 +129,9 @@ sts graph, ///
 graph export nonpara.png, replace 
  ```
 
-7.2 Inferences
+
+#7.2 Inferences
+
 ```stata
 hist ridageyr 
 graph export nonpara.png, replace 
@@ -173,7 +175,8 @@ graph export semipara_adj.png, replace
 graph save semipara_adj.gph, replace 
 ```
 
-7.3 Updates
+#7.3 Updates
+
 ```stata
 graph combine semipara_unadj.gph semipara_adj.gph, ///
     ycommon ti("Hazard Ratio, 95%CI") 
@@ -189,7 +192,8 @@ end
 selfassess $varlist
 ```
 
-7.4 Transparency
+#7.4 Transparency
+
 The “most open” you can ever get in the “Open Science” enterprise is by using a public GitHub repo
 Of the topics we’ve discussed, including data, code, parameters, inferences, and updates, “data” is of particular concern if there might be “disclosure risks”
 In the Stata II (Intermediate) we’ll assume all data are de-identified and have zero disclosure risk. Perhaps because we’ve de-identified the data or because we are using simulated datasets
@@ -197,11 +201,14 @@ But in Stata III (Advanced) we’ll learn how to use private repos for data stor
 Regardless, the parameters of our models represent reduced dimensions of data and have no associated disclosure risks
 So we should consider “extracting” parameters from our data and from that point forth being 100% transparent in our workflow
 
-7.5 Extracting Parameters
+
+#7.5 Extracting Parameters
+
 Virtually all scientific inferences from quantitive analyses can be made as long as you have the beta coefficients and the variance-covariance matrix following a multivariable regression.
 Because these parameters have zero discolure risk, you are encouraged to have them made available to the public in your public GitHub repo
 You’d do the public an extra favor if you laid out a generalizable program that allows anyone to add new parameters (i.e., variables and interactions amongst them) to the model with little extra effort
 Let’s restore the analytic dataset we’d created. If this dataset has disclosure risks, the we should extract “all” the relevant parameters for statistical inference, make them publically available, and display our findings
+
 ```stata
 cls 
 use week7, clear
@@ -268,5 +275,6 @@ line f1 _t , ///
 		)
 graph export scenario.png, replace 
 ```
+
 e(V)
 Estimating the 95%CI interval for specific scenarios is beyond the scope of this class and will be left to Stata III (Advanced)
