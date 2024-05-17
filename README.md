@@ -277,5 +277,5 @@ graph export scenario.png, replace
 ```
 
 #About the results 
-plases click [here] (https://kiyoiiiii.github.io/hw7data/)
+plases click [here](https://kiyoiiiii.github.io/hw7data/)
 
