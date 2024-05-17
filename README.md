@@ -276,4 +276,6 @@ line f1 _t , ///
 graph export scenario.png, replace 
 ```
 
+#About the results 
+plases click [here] (https://kiyoiiiii.github.io/hw7data/)
 
