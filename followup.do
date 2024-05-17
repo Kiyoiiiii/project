@@ -189,4 +189,3 @@ tab permth_exm if permth_exm==.z, missing
 // SAVE DATA FILE IN DIRECTORY DESIGNATED AT TOP OF PROGRAM AS **SURVEY**_PUF.DTA
 // replace option allows Stata to overwrite an existing .dta file
 save ${SURVEY}_PUF, replace
-
