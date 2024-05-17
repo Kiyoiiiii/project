@@ -276,5 +276,4 @@ line f1 _t , ///
 graph export scenario.png, replace 
 ```
 
-e(V)
-Estimating the 95%CI interval for specific scenarios is beyond the scope of this class and will be left to Stata III (Advanced)
+
